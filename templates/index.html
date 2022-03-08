@@ -74,7 +74,7 @@
             <h6 class="m-0 font-weight-bold text-success">Stream</h6>
         </a>
         {%if success%}
-        <div class="alert alert-success mt-2" role="succes">
+        <div class="m-5 alert alert-success" role="success">
             {{ success }}
         </div>
         {% else %}
@@ -88,7 +88,7 @@
             </div>
             <div class="col m-2">
                 <form action="/stream/stop" method="GET">
-                    <button type="submit" class="form-control btn btn-danger">Stopper le stream</button>
+                    <button type="submit" class="form-control btn btn-danger mt-2">Stopper le stream</button>
                 </form>
             </div>
         </div>

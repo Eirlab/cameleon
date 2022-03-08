@@ -37,13 +37,14 @@ class ConfigureCameleon:
         self.camera = device
         try:
             record = request.form['record']
-            if record == 'true':
+            if record:
+                print("Recording")
                 self.recording = True
         except KeyError:
             self.recording = False
         try:
             share = request.form['share']
-            if share == 'true':
+            if share:
                 self.share = True
         except KeyError:
             self.share = False
